@@ -1,13 +1,13 @@
 function addTodo() {
-    var todoInput = document.getElementById('todo-input');
-    var todoList = document.getElementById('todo-list');
+    let todoInput = document.getElementById('todo-input');
+    let todoList = document.getElementById('todo-list');
     
-    if (todoInput.value === '') return; // Don't add empty todos
+    if (todoInput.value === '') return; 
     
-    var li = document.createElement('li');
+    let li = document.createElement('li');
     li.textContent = todoInput.value;
   
-    var deleteButton = document.createElement('button');
+    let deleteButton = document.createElement('button');
     deleteButton.className = 'delete-button';
     deleteButton.textContent = 'Delete';
     deleteButton.onclick = function() {
